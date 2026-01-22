@@ -35,7 +35,7 @@ Build applications on the Tempo network with access to documentation and source 
 Install with [`skills`](https://skills.sh/docs) CLI:
 
 ```bash
-npx add-skill tempoxyz/agent-skills
+npx skills add tempoxyz/agent-skills
 ```
 
 Or manually:
