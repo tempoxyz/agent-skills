@@ -1,0 +1,6 @@
+{
+  "tempo": {
+    "command": "npx",
+    "args": ["-y", "vocs@next", "mcp", "--url", "https://docs.tempo.xyz/api/mcp"]
+  }
+}
