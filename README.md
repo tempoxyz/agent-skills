@@ -2,7 +2,7 @@
 
 A collection of skills for AI coding agents. Skills are packaged instructions and scripts that extend agent capabilities.
 
-Skills follow the [Agent Skills](https://agentskills.io/) format.
+Skills follow the [Agent Skills](https://agentskills.io) format.
 
 ## Available Skills
 
@@ -20,10 +20,25 @@ Build applications on the Tempo network with access to documentation and source 
 **Features:**
 
 - Search and read Tempo documentation
-- Browse source code for `tempoxyz/tempo` (Rust node) and `tempoxyz/tempo-ts` (TypeScript SDK)
-- Access related libraries: viem, wagmi, reth, foundry
+- Browse source code for [`tempoxyz/tempo`](https://github.com/tempoxyz/tempo) (Rust node) and [`tempoxyz/tempo-ts`](https://github.com/tempoxyz/tempo-ts) (TypeScript SDK + Examples)
+- Access related libraries: [Viem](https://viem.sh/tempo), [Wagmi](https://wagmi.sh/tempo), [Reth](https://github.com/paradigmxyz/reth), [Foundry](https://github.com/foundry-rs/foundry)
+
+**Categories covered:**
+
+- Transactions & accounts
+- TIP-20 stablecoins
+- Fee sponsorship
+- Protocol integration
 
 ## Installation
+
+Install with [`skills`](https://skills.sh/docs) CLI:
+
+```bash
+npx add-skill tempoxyz/agent-skills
+```
+
+Or manually:
 
 ```bash
 # Clone the repo
@@ -35,15 +50,27 @@ cp -r agent-skills/skills/tempo ~/.config/agents/skills/
 
 Or add to your project's `.agents/skills/` directory for project-specific access.
 
+### amp
+
+```bash
+amp skill add tempoxyz/agent-skills
+```
+
 ## Usage
 
 Skills are automatically available once installed. The agent will use them when relevant tasks are detected.
 
 **Examples:**
 
-- "How do I create a TIP-20 stablecoin?"
-- "Show me how fee sponsorship works in tempo-ts"
-- "Search the Tempo source for transaction validation"
+```
+How do I create a TIP-20 stablecoin?
+```
+```
+Show me how fee sponsorship works in Viem
+```
+```
+Search the Tempo source for transaction validation
+```
 
 ## Skill Structure
 
@@ -51,7 +78,6 @@ Each skill contains:
 
 - `SKILL.md` - Instructions for the agent
 - `mcp.json` - MCP server configuration (optional)
-- `scripts/` - Helper scripts for automation (optional)
 
 ## License
 
